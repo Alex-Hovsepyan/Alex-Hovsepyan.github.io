@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Лента Инстаграма</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+</head>
+<body>
+    <header>
+        <div class="header_container">
+            <svg width="40px" height="40px" viewBox="0 0 24 24" fill="#FFFFFF">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M2 6C2 3.79086 3.79086 2 6 2H18C20.2091 2 22 3.79086 22 6V18C22 20.2091 20.2091 22 18 22H6C3.79086 22 2 20.2091 2 18V6ZM6 4C4.89543 4 4 4.89543 4 6V18C4 19.1046 4.89543 20 6 20H18C19.1046 20 20 19.1046 20 18V6C20 4.89543 19.1046 4 18 4H6ZM12 9C10.3431 9 9 10.3431 9 12C9 13.6569 10.3431 15 12 15C13.6569 15 15 13.6569 15 12C15 10.3431 13.6569 9 12 9ZM7 12C7 9.23858 9.23858 7 12 7C14.7614 7 17 9.23858 17 12C17 14.7614 14.7614 17 12 17C9.23858 17 7 14.7614 7 12ZM17.5 8C18.3284 8 19 7.32843 19 6.5C19 5.67157 18.3284 5 17.5 5C16.6716 5 16 5.67157 16 6.5C16 7.32843 16.6716 8 17.5 8Z" fill="#FFFFFF"/>
+            </svg>
+            <h3>sergey.petrov</h3>
+            <div class="menu" onclick="menuFunc()">
+                <div class="menu_line1"></div>
+                <div class="menu_line2"></div>
+                <div class="menu_line3"></div>
+            </div>
+        </div>
+    </header>
+    <div class="type">
+        <svg width="40px" height="40px" viewBox="0 0 24 24" fill="none">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M2 5C2 3.34315 3.34315 2 5 2H19C20.6569 2 22 3.34315 22 5V19C22 20.6569 20.6569 22 19 22H5C3.34315 22 2 20.6569 2 19V5ZM5 4C4.44772 4 4 4.44772 4 5V17.5857L9.29285 12.2928C9.68337 11.9023 10.3165 11.9023 10.7071 12.2928L12.5 14.0857L20 6.58569V5C20 4.44772 19.5523 4 19 4H5ZM20 9.41412L13.2071 16.2071C12.8165 16.5976 12.1834 16.5976 11.7928 16.2071L9.99995 14.4142L4.5308 19.8833C4.67072 19.9578 4.83043 20 5 20H19C19.5523 20 20 19.5523 20 19V9.41412Z" fill="#000000"/>
+            </svg>
+        <h1>Video</h1>
+        <h1>Image</h1>
+        <svg width="45px" height="45px" viewBox="0 0 24 24" fill="none" >
+            <path d="M16.19 2H7.81C4.17 2 2 4.17 2 7.81V16.18C2 19.83 4.17 22 7.81 22H16.18C19.82 22 21.99 19.83 21.99 16.19V7.81C22 4.17 19.83 2 16.19 2ZM14.66 13.73L13.38 14.47L12.1 15.21C10.45 16.16 9.1 15.38 9.1 13.48V12V10.52C9.1 8.61 10.45 7.84 12.1 8.79L13.38 9.53L14.66 10.27C16.31 11.22 16.31 12.78 14.66 13.73Z" fill="#292D32"/>
+        </svg>
+    </div>
+    <style>
+        .swiper-container {
+          width: 100%;
+          height: 100%;
+        }
+        
+        .swiper-slide {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+        
+        .swiper-slide video {
+          max-width: 100%;
+          max-height: 100%;
+        }
+      </style>
+<div class="swiper-container">
+  <div class="swiper-wrapper">
+    <div class="swiper-slide">
+      <div class="slide-content">
+        <img src="/assets/play.jpg" alt="Image 1">
+        <button class="play-button">Play Video</button>
+      </div>
+    </div>
+    <div class="swiper-slide">
+      <video src="Kuplinov Play Remix - БИЗНЕС (by Обычный Парень x Dr.Mixxer).mp4" controls></video>
+    </div>
+    <div class="swiper-slide">
+      <video src="Just The Two Of Us.mp4" controls></video>
+    </div>
+  </div>
+
+  <!-- Добавляем кнопки навигации -->
+  <div class="swiper-button-next"></div>
+  <div class="swiper-button-prev"></div>
+</div>
+          <!-- Добавьте другие слайды с видеофайлами по аналогии -->
+        <!-- </div>
+        <div class="swiper-pagination"></div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+      </div> -->
+    <!-- <div class="images">
+        <div class="swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide"><img width="100%" src="/assets/reason1.jpg" alt=""></div>
+              <div class="swiper-slide"><img width="100%" src="/assets/reason2.jpg" alt=""></div>
+              <div class="swiper-slide"><img width="100%" src="/assets/reason1.jpg" alt=""></div>
+            </div>
+            <div class="swiper-pagination"></div>
+            <div class="swiper-scrollbar"></div>
+        </div>
+        <div class="swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide"><img width="100%" src="/assets/reason1.jpg" alt=""></div>
+              <div class="swiper-slide"><img width="100%" src="/assets/reason2.jpg" alt=""></div>
+              <div class="swiper-slide"><img width="100%" src="/assets/reason1.jpg" alt=""></div>
+            </div>
+            <div class="swiper-pagination"></div>
+            <div class="swiper-scrollbar"></div>
+        </div>
+        <div class="swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide"><img width="100%" src="/assets/reason1.jpg" alt=""></div>
+              <div class="swiper-slide"><img width="100%" src="/assets/reason2.jpg" alt=""></div>
+              <div class="swiper-slide"><img width="100%" src="/assets/reason1.jpg" alt=""></div>
+            </div>
+            <div class="swiper-pagination"></div>
+            <div class="swiper-scrollbar"></div>
+        </div>
+    </div> -->
+
+    <!-- <div class="video-player">
+        <video id="my-video">
+          <source src="video.mp4" type="video/mp4">
+        </video>
+        <div class="controls">
+          <button id="play-pause-btn" class="play"></button>
+          <div id="progress-bar">
+            <div id="progress"></div>
+          </div>
+        </div>
+      </div> -->
+    <!-- <div class="video">
+        <div class="swiper">
+            <div class="swiper-wrapper">
+                <video width="100%">
+                    <source src="Just The Two Of Us.mp4" type="video/mp4">
+                  Your browser does not support the video tag.
+                  </video>
+                  <video width="100%" controls>
+                      <source src="Kuplinov Play Remix - БИЗНЕС (by Обычный Парень x Dr.Mixxer).mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                    </video>
+                  <video width="100%" controls>
+                      <source src="Dr.Mixxer feat. Куплинов - Ульта.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                    </video>
+
+            </div>
+            <div class="swiper-scrollbar"></div>
+        </div>
+        <div class="swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide"><img width="100%" src="/assets/reason1.jpg" alt=""></div>
+              <div class="swiper-slide"><img width="100%" src="/assets/reason2.jpg" alt=""></div>
+              <div class="swiper-slide"><img width="100%" src="/assets/reason1.jpg" alt=""></div>
+            </div>
+            <div class="swiper-pagination"></div>
+            <div class="swiper-scrollbar"></div>
+        </div>
+        <div class="swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide"><img width="100%" src="/assets/reason1.jpg" alt=""></div>
+              <div class="swiper-slide"><img width="100%" src="/assets/reason2.jpg" alt=""></div>
+              <div class="swiper-slide"><img width="100%" src="/assets/reason1.jpg" alt=""></div>
+            </div>
+            <div class="swiper-pagination"></div>
+            <div class="swiper-scrollbar"></div>
+        </div>
+    </div> -->
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="scripts.js"></script>
+    <script>
+        const swiper = new Swiper('.swiper', {
+            loop: true,
+            pagination: {
+              el: '.swiper-pagination',
+            },
+        
+            navigation: {
+              nextEl: '.swiper-button-next',
+              prevEl: '.swiper-button-prev',
+            },
+        
+            scrollbar: {
+              el: '.swiper-scrollbar',
+            },
+        });
+    </script>
+</body>
+</html>
